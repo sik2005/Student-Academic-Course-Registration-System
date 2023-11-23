@@ -1,0 +1,43 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMS PROJECT</title>
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body bgcolor="lightblue">
+
+
+
+<h2 align="center">Student Academic Course Registration System</h2>
+
+<a href="{% url 'home' %}">Home</a>,&nbsp;&nbsp;&nbsp;
+<a href="{% url 'about' %}">About Project</a>,&nbsp;&nbsp;&nbsp;
+<a href="{% url 'login' %}">Login</a>,&nbsp;&nbsp;&nbsp;
+<a href="{% url 'contact' %}">Contact Us</a>,&nbsp;&nbsp;&nbsp;
+
+<br><br>
+
+{% block 'body' %}
+
+<p>I am in Home Page</p>
+
+{% endblock %}
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
